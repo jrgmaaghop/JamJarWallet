@@ -13,3 +13,6 @@ yarn-error.log
 .idea
 .idea/
 .idea/JamJarWallet.iml
+.idea/php.xml
+node_modules
+vendor
