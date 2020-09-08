@@ -16,7 +16,7 @@ class StripeController extends Controller
         $this->sk = env('STRIPE_SECRET');
     }
 
-    public function newStripeClient()
+    public function newStripeClient($connected_account = null)
     {
         return new StripeClient($this->sk);
     }

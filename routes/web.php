@@ -15,6 +15,10 @@ use Illuminate\Support\Facades\Route;
 
 Route::view('/', 'index');
 
-//Auth::routes();
+Route::get('get/token', function (){
+    return response()->json(['token' => \Illuminate\Support\Facades\Session::token()]);
+});
+
+Auth::routes();
 //
 //Route::get('/home', 'HomeController@index')->name('home');
